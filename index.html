@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Line Break Remover</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSSファイルへのリンク -->
+</head>
+<body>
+    <h1>Line Break Remover</h1>
+    <p>Paste your text here to remove unwanted line breaks:</p>
+    <textarea id="input-text" rows="10" cols="50" placeholder="Paste text here..."></textarea> <!-- テキスト入力エリア -->
+    <br>
+    <button onclick="removeLineBreaks()">Remove Line Breaks</button> <!-- 改行を削除するボタン -->
+
+    <h2>Result:</h2>
+    <div id="result" style="white-space: pre-wrap;"></div> <!-- 結果を表示 -->
+
+    <!-- Resultの下にGoogle翻訳へのリンクを配置 -->
+    <button onclick="window.open('https://translate.google.com', '_blank')">Open in Google Translate</button> <!-- Google翻訳ボタン -->
+
+    <script src="script.js"></script> <!-- JavaScriptファイルへのリンク -->
+</body>
+</html>
