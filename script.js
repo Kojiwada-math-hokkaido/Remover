@@ -4,6 +4,11 @@ let previousResults = [];
 
 function removeLineBreaks() {
     const inputText = document.getElementById("input-text").value; // テキストの取得
+		if (inputText.trim() === "") {
+			// テキストが空白または何も入力されていない場合は操作を中止
+			console.warn("No text to process");
+			return; // 処理を終了
+		}
     const textWithoutLineBreaks = inputText.replace(/\n+/g, ' ').trim(); // 改行をスペースに置換
 
     document.getElementById("result").innerText = textWithoutLineBreaks; // 改行削除後の結果を表示
