@@ -15,9 +15,38 @@ button {
 	margin-top: 10px; /* ボタンの間隔を追加 */
 }
 
+button:hover {
+	background-color: #616c7f; /* ちょっと暗い青 */
+}
+
 #result {
 	background-color: #f9f9f9;
 	padding: 10px;
 	border: 1px solid #ccc;
 	margin-top: 10px; /* 結果エリアの上部にスペースを追加 */
+}
+
+#previous-results {
+	margin-top: 10px;
+}
+
+.result-index {
+	font-size: 18px; /* フォントサイズを少し小さく */
+	font-weight: bold; /* 太文字にする */
+	color: rgb(11, 11, 11); /* 文字の色を黒に近い色に設定 */
+}
+
+.copy-button {
+	font-size: 12px; /* ボタンのフォントサイズ */
+	height: 18px; /* 高さをフォントサイズに合わせる */
+	width: 60px; /* ボタンの幅を広くする */
+	padding: 0 10px; /* 左右のパディング */
+	margin-left: 10px; /* 左側にマージンを追加 */
+	border: none;
+	background-color: lightgray; /* 背景色 */
+	cursor: pointer; /* カーソル */
+}
+
+.copy-button:hover {
+	background-color: gray; /* ホバー時の色変更 */
 }

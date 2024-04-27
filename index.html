@@ -11,12 +11,19 @@
     <textarea id="input-text" rows="10" cols="50" placeholder="Paste text here..."></textarea> <!-- テキスト入力エリア -->
     <br>
     <button onclick="removeLineBreaks()">Remove Line Breaks</button> <!-- 改行を削除するボタン -->
+    <!-- 入力をクリアするボタン -->
+    <button id="clearInputButton" onclick="clearInput()">Clear Input</button>
 
     <h2>Result:</h2>
     <div id="result" style="white-space: pre-wrap;"></div> <!-- 結果を表示 -->
 
-    <!-- Resultの下にGoogle翻訳へのリンクを配置 -->
-    <button onclick="window.open('https://translate.google.com', '_blank')">Open in Google Translate</button> <!-- Google翻訳ボタン -->
+    <div>
+        <!-- Google翻訳へのボタン -->
+        <button id="translateButton" onclick="goToGoogleTranslate()">Open in Google Translate</button>
+    </div>
+
+    <h2>Previous Results:</h2>
+    <div id="previous-results" style="white-space: pre-wrap;"></div> <!-- 過去の結果を表示 -->
 
     <script src="script.js"></script> <!-- JavaScriptファイルへのリンク -->
 </body>
