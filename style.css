@@ -1,18 +1,25 @@
 /* style.css */
 body {
 	font-family: Arial, sans-serif;
-	margin: 20px;
+	padding: 0;
+	margin: 0;
 }
 
-textarea {
+h2 {
+	padding-top: 50px;
+}
+
+#input-text {
 	width: 100%;
-	font-size: 16px;
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
 }
 
-button {
+.trans-button {
 	padding: 10px;
 	font-size: 16px;
 	margin-top: 10px; /* ボタンの間隔を追加 */
+	background-color: #c9c9c9;
 }
 
 button:hover {
